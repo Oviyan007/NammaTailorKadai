@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", serif;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 70px;
+    width: 100%; /* Adjust width for smaller screens */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #c8ced3;
+    padding: 10px 20px;
+    margin: auto; /* Center the navbar */
+   
+   
+}
+
+.navbar .navbar-brand img {
+    max-height: 70px; /* Limit logo size */
+}
+
+.navbar-toggler {
+    display: none; /* Hidden by default, visible on smaller screens */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-item .btn-primary {
+    padding: 8px 20px;
+    font-size: 14px;
+    
+}
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+  padding-bottom: 5px; /* Add padding at the bottom for space */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+/* Underline effect */
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Underline thickness */
+  background-color: #007bff; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+/* Hero Section */
+.hero_page {
+    height: 700px;
+    width: 100%;
+    background: url(./img/header-bg.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+
+}
+
+.hero_page .container {
+    max-width: 100%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero_page button {
+    width: 300px;
+    align-self: center;
+    background-color: #7BD3EA;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero_page button:hover {
+    background-color: #5bb2d6;
+    transform: translateY(-3px);
+}
+
+.hero_page h3 {
+    font-size: 36px;
+}
+
+.hero_page h3 > p {
+    color: grey;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero_page span {
+    color: #0A5EB0;
+}
+
+.hero_page img {
+    position: relative;
+    right: 20px;
+    max-width: 100%; /* Ensures the image is responsive */
+}
+
+/* stats section */
+
+/* Section Styling */
+.stats-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Stats Container */
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Individual Stat Item */
+  .stat-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+  
+  .stat-item h3 {
+    font-size: 28px;
+    color:  #3bb6de;
+    margin: 0 0 10px;
+  }
+  
+  .stat-item p {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+  }
+  /* Carousel Image Styling */
+  .clients-slider .swiper-slide {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-slider img {
+    width: 100px; /* Adjust size as per your requirement */
+    height: auto;
+}
+  
+/* stats section  end */
+
+
+/* specialixed service  */
+
+/* Section Styling */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.section-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Services List */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.services-section .card img{
+    padding:10px;
+    
+}
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Hover Animation */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* specialixed service  end*/
+
+/* General Portfolio Container Styling */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Title Styling */
+h2.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Personal Tailor Content Section */
+.personal-tailor-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 20px;
+    
+    color: #000;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Highlights */
+.highlight {
+    color:  #3bb6de; /* Blue color */
+    font-weight: bold;
+}
+
+.highlight-name {
+    color: #3bb6de; /* Blue color for name */
+    font-weight: bold;
+}
+
+.highlight-italic {
+    font-style: italic;
+    color: #3bb6de; /* Darker blue for emphasis */
+}
+
+/* Image Content Styling */
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+
+
+/* portfolio section ends */
+/* customer section */
+/* General Swiper Styling */
+.clients-slider .swiper-wrapper {
+    display: flex;
+    justify-content: center;  
+   
+}
+
+.clients-slider .swiper-slide {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/* Testimonial item styles */
+.testimonial-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    max-width: 300px; /* Adjust as per your layout */
+    box-shadow:#3bb6de 0px 7px 29px 0px;
+}
+
+.stars i {
+    color: #3bb6de;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.testimonial-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style for pagination dots */
+.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+/* Container for testimonials and mid-banner */
+.testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between testimonials and mid-banner */
+  }
+  
+  /* Testimonials slider styling */
+  .testimonials-slider {
+    flex: 1; /* Allow the testimonials section to take remaining space */
+  }
+  
+  /* Mid-banner image styling */
+  .mid-banner {
+    flex-basis: 300px; /* Set a fixed width for mid-banner on larger screens */
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mid-banner img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  
+ 
+  
+
+/* customer section ends */
+/* Tailoring Perfection Section Styles */
+/* Tailoring Perfection Section Styles */
+.tailoring-perfection {
+    padding: 50px 0;
+    background-color: #f4f4f4; 
+   /* Light background color */
+  }
+  
+  .tailoring-perfection .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 350px; /* Set image width */
+  }
+  
+  .text-container {
+    max-width: 50%;
+  }
+  
+  .text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .text-container .highlight {
+    font-weight: bold;
+    color:  #3bb6de; /* Highlight color */
+  }
+  
+  .text-container .btn-contact {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    background-color: #3bb6de;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text-container .btn-contact:hover {
+    background-color: #0056b3;
+  }
+  /* FAQ Section Styles */
+.faq {
+    padding: 50px 0;
+    background-color: #fff; /* Light background */
+  }
+  
+  .faq .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for question */
+  }
+  
+  .faq-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+  }
+  
+  
+ /* footer section */
+  .footer {
+    background: url('./img/footer.svg');
+    background-size: cover;   
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+  
+  }
+  
+  .footer-logo {
+    flex: 1;
+    max-width: 250px;
+   
+  }
+  
+  .footer-logo .logo {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+    
+  .footer-links {
+    flex: 2;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    flex: 1;
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+
+
+/* Responsive styles for navbar */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start;
+      padding: 15px;
+  }
+
+  .navbar-toggler {
+      display: block; /* Show the toggle button */
+      margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+      flex-direction: column; /* Stack nav items vertically */
+      width: 100%; /* Full width for nav links */
+      gap: 10px; /* Adjust spacing */
+  }
+
+  .nav-item {
+      text-align: left;
+      width: 100%; /* Make each nav item fill the width */
+  }
+}
+
+/* Responsive styles for hero section */
+@media (max-width: 768px) {
+  .hero_page {
+      height: 700px; /* Adjust height for smaller screens */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .hero_page button {
+      width: 100%; /* Full width for buttons */
+      max-width: 300px;
+  }
+
+  .hero_page h3 {
+      font-size: 28px;
+  }
+
+  .hero_page h3 > p {
+      font-size: 16px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_page {
+      text-align: left;
+  }
+
+  .hero_page .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 35%;
+  }
+
+  .hero_page h3 {
+      font-size: 24px;
+  }
+
+  .hero_page button {
+      width: 100%; /* Full width for buttons */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero_page .container {
+      margin-top: 50%;
+      text-align: center;
+  }
+
+  .hero_page h3 {
+      font-size: 20px;
+  }
+
+  .hero_page h3 > p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero_page .container {
+      margin-top: 50%;
+      text-align: center;
+  }
+
+  .hero_page h3 {
+      font-size: 20px;
+  }
+
+  .hero_page h3 > p {
+      font-size: 14px;
+  }
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 768px) {
+  .personal-tailor-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-content {
+      width: 100%;
+      padding-right: 0;
+  }
+
+  .image-content img {
+      width: 80%;
+      max-width: 400px;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .testimonials-content {
+      flex-direction: column; /* Stack testimonials and mid-banner vertically */
+  }
+
+  .mid-banner {
+      flex-basis: auto;
+      margin-top: 20px;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .image-container img {
+      width: 250px; /* Adjust image size on mobile */
+  }
+
+  .text-container {
+      max-width: 100%;
+  }
+
+  .text-container h2 {
+      font-size: 2rem;
+  }
+
+  .text-container p {
+      font-size: 1rem;
+  }
+
+  .text-container .btn-contact {
+      font-size: 1rem;
+      padding: 10px 25px;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .faq h2 {
+      font-size: 2rem;
+  }
+
+  .faq-item h3 {
+      font-size: 1.2rem;
+  }
+
+  .faq-item p {
+      font-size: 1rem;
+  }
+}
