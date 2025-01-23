@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Source Code Pro", serif;
+    
 }
 
 /* Navbar styles */
@@ -16,6 +16,7 @@
     background-color: #c8ced3;
     padding: 10px 20px;
     margin: auto; /* Center the navbar */
+    font-family: "poppins";
    
    
 }
@@ -98,10 +99,10 @@
     padding: 0 15px;
 }
 
-.hero_page button {
+.hero_page button  {
     width: 300px;
     align-self: center;
-    background-color: #7BD3EA;
+    background-color: #0A5EB0;
     border: 1px solid black;
     border-radius: 10px;
     outline: none;
@@ -109,7 +110,9 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "poppins";
 }
+
 
 .hero_page button:hover {
     background-color: #5bb2d6;
@@ -117,7 +120,10 @@
 }
 
 .hero_page h3 {
-    font-size: 36px;
+    font-size: 47px;
+    font-weight: bold;
+    font-family:'Nohemi';
+   
 }
 
 .hero_page h3 > p {
@@ -125,6 +131,7 @@
     margin-top: 20px;
     font-size: 18px;
     line-height: 1.6;
+    font-family: "poppins";
 }
 
 .hero_page span {
@@ -136,7 +143,17 @@
     right: 20px;
     max-width: 100%; /* Ensures the image is responsive */
 }
-
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Adds spacing above the button */
+}
+.hero_page button i {
+  margin-top: 2px;
+  font-size: 18px;
+  color: white;
+}
 /* stats section */
 
 /* Section Styling */
@@ -151,6 +168,7 @@
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
+    font-family:'Nohemi';
   }
   
   /* Stats Container */
@@ -176,12 +194,14 @@
     font-size: 28px;
     color:  #3bb6de;
     margin: 0 0 10px;
+    font-family:'Nohemi';
   }
   
   .stat-item p {
     font-size: 18px;
     color: #000;
     margin: 0;
+    font-family: "poppins";
   }
   /* Carousel Image Styling */
   .clients-slider .swiper-slide {
@@ -213,12 +233,14 @@
     font-weight: 700;
     margin-bottom: 15px;
     color: #000;
+    font-family:'Nohemi';
 }
 
 .section-description {
     font-size: 1rem;
     margin-bottom: 30px;
     color: #000;
+    font-family: "poppins";
 }
 
 /* Services List */
@@ -301,6 +323,7 @@
 h2.text-center {
     text-align: center;
     margin-bottom: 20px;
+    font-family:'Nohemi';
 }
 
 /* Personal Tailor Content Section */
@@ -310,6 +333,7 @@ h2.text-center {
     align-items: center;
     width: 100%;
     margin-top: 20px;
+    font-family: "poppins";
 }
 
 .text-content {
@@ -332,7 +356,7 @@ h1 {
 
 /* Highlights */
 .highlight {
-    color:  #3bb6de; /* Blue color */
+    color:  #0A5EB0; /* Blue color */
     font-weight: bold;
 }
 
@@ -431,7 +455,9 @@ h1 {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
-  
+  .customerTitle{
+    font-family:'Nohemi';
+  }
  
   
 
@@ -472,12 +498,14 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
+    font-family:'Nohemi';
   }
   
   .text-container p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 30px;
+    font-family: "poppins";
     color: #000;
   }
   
@@ -494,6 +522,7 @@ h1 {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    font-family: "poppins";
   }
   
   .text-container .btn-contact:hover {
@@ -516,6 +545,7 @@ h1 {
     margin-bottom: 40px;
     text-align: center;
     color: #000;
+    font-family: "poppins";
   }
   
   .faq-item {
@@ -527,12 +557,14 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
     color: #007bff; /* Blue color for question */
+    font-family: "poppins";
   }
   
   .faq-item p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #000;
+    font-family: "poppins";
   }
   
   
@@ -543,6 +575,7 @@ h1 {
     background-position: center;
     padding: 40px 0;
     color: white;
+    font-family: "poppins";
   }
   
   .footer-content {
