@@ -489,33 +489,35 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.clients-slider', {
-            slidesPerView: 5, // Number of visible slides
-            spaceBetween: 20, // Space between slides
-            loop: true,       // Enable looping
-            autoplay: {
-                delay: 3000, // 3 seconds per slide
-                disableOnInteraction: false,
+        slidesPerView: 5, // Number of visible slides
+        spaceBetween: 20, // Space between slides
+        loop: true,       // Enable looping
+        centeredSlides: true, // Center the slides
+        slidesPerGroupAuto: true, // Automatically group slides to avoid blanks
+        autoplay: {
+            delay: 3000, // 3 seconds per slide
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            // Responsive settings
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 15,
             },
-            breakpoints: {
-                // Responsive settings
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 15,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 20,
             },
-        });
+        },
+    });
        
 //slider for testinomial
 
