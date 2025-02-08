@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('./img/scissors-cursor.png'), auto;
     
 }
 
@@ -781,8 +782,20 @@ h1 {
 /* Responsive styling */
 @media (max-width: 768px) {
   .testimonials-content {
-      flex-direction: column; /* Stack testimonials and mid-banner vertically */
+      flex-direction: column;
+      height: 300px; /* Stack testimonials and mid-banner vertically */
   }
+  .testimonial-item{
+    flex-direction: column;
+    margin: 10px;
+    min-width: 250px;
+    min-height: 300px;
+  }
+  .swiper-slide {
+    width: auto !important;
+    min-width: 250px;
+    min-height: 400px;
+}
 
   .mid-banner {
       flex-basis: auto;
@@ -798,7 +811,7 @@ h1 {
   }
 
   .image-container img {
-      width: 250px; /* Adjust image size on mobile */
+      display: none; /* Adjust image size on mobile */
   }
 
   .text-container {
